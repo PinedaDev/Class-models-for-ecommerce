@@ -11,8 +11,7 @@ public class User {
   private boolean isAdmin;
   private ArrayList<Integer> orders = new ArrayList<>();
 
-  public User(int id, String firstName, String lastName, String email,boolean isAdmin) {
-    this.id = id;
+  public User(String firstName, String lastName, String email,boolean isAdmin) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.email = email;
