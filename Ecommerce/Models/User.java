@@ -33,11 +33,12 @@ public class User {
     System.out.println(lastName);
   }
   public void getEmail() {
-    System.out.println(firstName + " " + lastName);
+    System.out.println(email);
   }
   public void getOrders() {
     System.out.println(orders);
   }
+
   public void addOrder(String action, int id){
     if (Objects.equals(action, "ADD")) {
       orders.add(id);
