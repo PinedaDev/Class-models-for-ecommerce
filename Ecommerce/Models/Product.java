@@ -14,91 +14,81 @@ public class Product {
   private double price;
   private double reviews;
 
-  public Product(String name, String img, String description, ArrayList<String> categories,
-                 ArrayList<String> colors, ArrayList<Integer> size, Double price) {
-
-    this.name = name;
-    this.img = img;
-    this.description = description;
-    this.categories = categories;
-    this.colors = colors;
-    this.size = size;
-    this.price = price;
-
+  public Product() {
   }
+
+  // Getters
   public String getId() {
     return id;
   }
+
   public String getName() {
     return name;
   }
-  public void setName(String name) {
-    this.name = name;
-  }
+
   public String getImg() {
     return img;
   }
-  public void setImg(String img) {
-    this.img = img;
-  }
+
   public String getDescription() {
     return description;
   }
-  public void setDescription(String description) {
-    this.description = description;
-  }
+
   public ArrayList<String> getCategories() {
     return categories;
   }
+
+  public ArrayList<String> getColors() {
+    return colors;
+  }
+
+  public ArrayList<Integer> getSize() {
+    return size;
+  }
+
+  public double getPrice() {
+    return price;
+  }
+
+  public double getReviews() {
+    return reviews;
+  }
+
+  // Setters
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public void setImg(String img) {
+    this.img = img;
+  }
+
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
   public void setCategories(ArrayList<String> categories) {
     this.categories = categories;
   }
 
-  public void addCategory(String category) {
-    if (!categories.contains(category)) {
-      categories.add(category);
-    }
-  }
-  public void removeCategory(String category) {
-    categories.remove(category);
-  }
-  public ArrayList<String> getColors() {
-    return colors;
-  }
   public void setColors(ArrayList<String> colors) {
     this.colors = colors;
   }
 
-  public void addColor(String color) {
-    if (!colors.contains(color)) {
-      colors.add(color);
-    }
-  }
-  public void removeColor(String color) {
-    colors.remove(color);
-  }
-  public ArrayList<Integer> getSize() {
-    return size;
-  }
   public void setSize(ArrayList<Integer> size) {
     this.size = size;
   }
-  public void addSize(int size) {
-    if (!this.size.contains(size)) {
-      this.size.add(size);
-    }
+
+  public void setPrice(double price) {
+    this.price = price;
   }
 
-  public void removeSize(int size) {
-    if (this.size.contains(size)) {
-      this.size.remove(Integer.valueOf(size));
-    }
-  }
-  public Double getPrice() {
-    return price;
-  }
-  public void setPrice(Double price) {
-    this.price = price;
+  public void setReviews(double reviews) {
+    this.reviews = reviews;
   }
 
   public void printProductDetails() {

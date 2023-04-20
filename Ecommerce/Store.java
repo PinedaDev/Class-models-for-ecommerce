@@ -9,10 +9,11 @@ public class Store {
   public static void main(String[] args) {
 
     // Users //
-    User abraham = new User("Abraham", "Pineda", "abraham.integrify@gmail.com", true);
-    abraham.getName();
-    abraham.getEmail();
-    abraham.getId();
+    User user = new User();
+    user.setFirstName("Abraham");
+    user.setLastName("Pineda");
+    user.setEmail("abraham.integrify@gmail.com");
+    user.setIsAdmin(true);
 
     // Product //
     ArrayList<String> categories = new ArrayList<>();
@@ -27,15 +28,14 @@ public class Store {
     sizes.add(32);
     sizes.add(64);
 
-    Product shoe = new Product(
-            "Addidas Ultra Boost",
-            "ultra-boost.jpg",
-            "bla bla bla",
-            categories,
-            colors,
-            sizes,
-            99.0
-    );
+    Product shoe = new Product();
+    shoe.setName("Addidas Ultra Boost");
+    shoe.setImg("ultra-boost.jpg");
+    shoe.setCategories(categories);
+    shoe.setColors(colors);
+    shoe.setSize(sizes);
+    shoe.setDescription("bla bla bla");
+    shoe.setPrice(99.0);
 
     shoe.printProductDetails();
 
