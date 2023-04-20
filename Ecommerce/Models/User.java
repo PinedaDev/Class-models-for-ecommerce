@@ -77,4 +77,11 @@ public class User {
       }
     }
   }
+
+  public void printUserDetails() {
+    System.out.println("ID: " + id);
+    System.out.println("Name: " + firstName + " " + lastName);
+    System.out.println("Email: " + email);
+    System.out.println("Role: " + (isAdmin ? "Admin":"Customer"));
+  }
 }

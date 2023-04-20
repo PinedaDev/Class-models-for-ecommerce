@@ -14,7 +14,9 @@ public class Store {
     user.setLastName("Pineda");
     user.setEmail("abraham.integrify@gmail.com");
     user.setIsAdmin(true);
+    user.printUserDetails();
 
+    System.out.println(user);
     // Product //
     ArrayList<String> categories = new ArrayList<>();
     categories.add("running");
